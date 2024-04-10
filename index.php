@@ -1,9 +1,6 @@
 <?php 
 
-	
-
-
-
+	include_once 'php_action/conexao_bd.php';
 
 ?>
 
