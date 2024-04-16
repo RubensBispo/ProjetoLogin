@@ -2,6 +2,11 @@
 
 	include_once 'php_action/conexao_bd.php';
 
+	//cabeçalho
+	include_once 'includes/header.php';
+
+	include_once 'includes/mensagem.php';
+
 	?>
 
 
@@ -34,15 +39,18 @@
 			</div>
 
 			<div class="form-group row">
-				<div class="form-check">
-					<label for="sexo" class="col-sm-2 col-form-label">Sexo</label>
-					<input type="radio" class="form-check-input" id="masculino" name="optsexo" value="m" checked>Masculino
-					<label class="form-check-label" for="masculino"></label>
-				</div>
-				<div class="form-check">
-					<input type="radio" class="form-check-input" id="feminino" name="optsexo" value="f">Feminino
-					<label class="form-check-label" for="feminino"></label>
-				</div>
+				<p>
+					<label>
+						<input name="sexo" type="radio" checked />
+						<span>Maculino</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input name="sexo" type="radio" />
+						<span>Feminino</span>
+					</label>
+				</p>
 			</div>
 
 			<div class="form-group row">
@@ -54,7 +62,7 @@
 
 			<div class="form-group row">
 				<div class="col-sm-10">
-					<button type="submit" class="btn btn-primary">Entrar</button>
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
 				</div>
 			</div>
 		</form>
