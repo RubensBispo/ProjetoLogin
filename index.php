@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php 
 
 include_once 'php_action/conexao_bd.php';
@@ -15,7 +14,7 @@ include_once 'php_action/conexao_bd.php';
 			padding: 10px;
 			margin-top: 30px;
 		}
-	
+
 
 	</style>
 	<meta charset="utf-8">
@@ -51,26 +50,5 @@ include_once 'php_action/conexao_bd.php';
 				</div>
 			</div>
 		</form>
-		
-
 	</body>
 	</html>
-=======
-<?php 
-
-	include_once 'php_action/conexao_bd.php';
-
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
-</head>
-<body>
-	<h1>Bem vindo - entre com seu dados</h1>
-</body>
-</html>
->>>>>>> 11442b24710ed018204b164e3948c28a85f718e7
