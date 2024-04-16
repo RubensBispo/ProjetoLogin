@@ -1,36 +1,13 @@
-<?php 
+	<?php 
 
-include_once 'php_action/conexao_bd.php';
+	include_once 'php_action/conexao_bd.php';
 
-?>
+	?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<style type="text/css">
-		
-		.box{
-			margin: 0 auto; width: 50%;
-			padding: 10px;
-			margin-top: 30px;
-		}
-
-
-	</style>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!--Import materialize.css-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<title>Cadastro de Usuário</title>
-</head>
-<body>
 
 	<div class="box">
 		<h1>Cadastro de usuários</h1>
-		<form action="php_action/verifica_usuario.php">
+		<form action="php_action/criar_usuario.php">
 			<div class="form-group row">
 				<label for="nome" class="col-sm-2 col-form-label">Nome</label>
 				<div class="col-sm-10">
@@ -59,15 +36,15 @@ include_once 'php_action/conexao_bd.php';
 			<div class="form-group row">
 				<div class="form-check">
 					<label for="sexo" class="col-sm-2 col-form-label">Sexo</label>
-					<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
-					<label class="form-check-label" for="radio1"></label>
+					<input type="radio" class="form-check-input" id="masculino" name="optsexo" value="m" checked>Masculino
+					<label class="form-check-label" for="masculino"></label>
 				</div>
 				<div class="form-check">
-					<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
-					<label class="form-check-label" for="radio2"></label>
+					<input type="radio" class="form-check-input" id="feminino" name="optsexo" value="f">Feminino
+					<label class="form-check-label" for="feminino"></label>
 				</div>
 			</div>
-			
+
 			<div class="form-group row">
 				<label for="senha" class="col-sm-2 col-form-label">Senha</label>
 				<div class="col-sm-10">
