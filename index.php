@@ -1,42 +1,57 @@
-<?php 
+	<?php 
 
-include_once 'php_action/conexao_bd.php';
+	include_once 'php_action/conexao_bd.php';
 
-?>
+	//cabeçalho
+	include_once 'includes/header.php';
 
-<!DOCTYPE html>
-<html>
-<head>
-	<style type="text/css">
-		
-		.box{
-			margin: 0 auto; width: 50%;
-			padding: 10px;
-			margin-top: 30px;
-		}
+	include_once 'includes/mensagem.php';
 
-
-	</style>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!--Import materialize.css-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<title>Login</title>
-</head>
-<body>
+	?>
 
 	<div class="box">
-		<h1>Login</h1>
-		<form action="php_action/verifica_usuario.php">
+		<h1>Cadastro de usuários</h1>
+		<form action="php_action/criar_usuario.php">
 			<div class="form-group row">
-				<label for="usuario" class="col-sm-2 col-form-label">Usuario</label>
+				<label for="nome" class="col-sm-2 col-form-label">Nome</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuário">
+					<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
 				</div>
 			</div>
+			<div class="form-group row">
+				<label for="sobrenome" class="col-sm-2 col-form-label">Sobrenome</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="email" class="col-sm-2 col-form-label">E-mail</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="email" id="email" placeholder="E-mail">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="cpf" class="col-sm-2 col-form-label">CPF</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="cpf" id="cpf" placeholder="Nome">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<p>
+					<label>
+						<input name="sexo" id="sexo" type="radio" checked />
+						<span>Maculino</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input name="sexo" id="sexo" type="radio" />
+						<span>Feminino</span>
+					</label>
+				</p>
+			</div>
+
 			<div class="form-group row">
 				<label for="senha" class="col-sm-2 col-form-label">Senha</label>
 				<div class="col-sm-10">
@@ -46,7 +61,7 @@ include_once 'php_action/conexao_bd.php';
 
 			<div class="form-group row">
 				<div class="col-sm-10">
-					<button type="submit" class="btn btn-primary">Entrar</button>
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
 				</div>
 			</div>
 		</form>

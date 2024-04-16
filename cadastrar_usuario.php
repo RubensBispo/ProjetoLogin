@@ -9,7 +9,6 @@
 
 	?>
 
-
 	<div class="box">
 		<h1>Cadastro de usuários</h1>
 		<form action="php_action/criar_usuario.php">
@@ -41,13 +40,13 @@
 			<div class="form-group row">
 				<p>
 					<label>
-						<input name="sexo" type="radio" checked />
+						<input name="sexo" id="sexo" type="radio" checked />
 						<span>Maculino</span>
 					</label>
 				</p>
 				<p>
 					<label>
-						<input name="sexo" type="radio" />
+						<input name="sexo" id="sexo" type="radio" />
 						<span>Feminino</span>
 					</label>
 				</p>
