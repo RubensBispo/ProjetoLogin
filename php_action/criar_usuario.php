@@ -16,15 +16,16 @@
 		$usuario = mysqli_escape_string($connection,$_POST['usuario']);
 		$senha = mysqli_escape_string($connection,$_POST['senha']);
 
-		$consulta = "select email from pessoa where email=$email";
+		$consulta = "select email from pessoa where email= $email";
 
-		if ($consulta) {
-			// code...
+		if (mysqli_query($connection, $consulta)
+		{
+			$_SESSION['mensagem'] = "Usuário já é cadastrado";
+
+			header('Location: ../login.php');
 		}
-
-
-
-		$sql = "INSERT INTO pessoa(nome,sobrenome,email,cpf,sexo,usuario,senha)VALUES('$nome','$sobrenome','$email','$cpf','$sexo','$usuario','$senha')";
+		else{
+			$sql = "INSERT INTO pessoa(nome,sobrenome,email,cpf,sexo,usuario,senha)VALUES('$nome','$sobrenome','$email','$cpf','$sexo','$usuario','$senha')";
 
 		if(mysqli_query($connection, $sql)) {
 
@@ -38,4 +39,9 @@
 
 			header('Location: ../index.php');	
 		}
+		}
+
+
+
+		
 	}
