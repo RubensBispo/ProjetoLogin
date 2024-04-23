@@ -1,17 +1,17 @@
 	<?php 
 
-	include_once 'php_action/conexao_bd.php';
+	include_once './php_action/conexao_bd.php';
 
 	//cabeçalho
-	include_once 'includes/header.php';
+	include_once './includes/header.php';
 
-	include_once 'includes/mensagem.php';
+	include_once './includes/mensagem.php';
 
 	?>
 
 	<div class="box">
 		<h1>Cadastro de usuários</h1>
-		<form action="php_action/criar_usuario.php">
+		<form action="php_action/criar_usuario.php" method="post">
 			<div class="form-group row">
 				<label for="nome" class="col-sm-2 col-form-label">Nome</label>
 				<div class="col-sm-10">
@@ -40,13 +40,13 @@
 			<div class="form-group row">
 				<p>
 					<label>
-						<input name="sexo" id="sexo" type="radio" checked />
+						<input name="sexo" id="sexo" value="m" type="radio" checked />
 						<span>Maculino</span>
 					</label>
 				</p>
 				<p>
 					<label>
-						<input name="sexo" id="sexo" type="radio" />
+						<input name="sexo" id="sexo" value="f" type="radio" />
 						<span>Feminino</span>
 					</label>
 				</p>

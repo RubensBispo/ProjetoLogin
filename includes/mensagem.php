@@ -1,20 +1,20 @@
 <?php 
 
-	session_start();
+session_start();
 
-	if(isset($_SESSION['mensagem'])){ ?>
+if(isset($_SESSION['mensagem'])){
+	?>
 
-		<script>
-			
-			window.onload = function(){
+	<script>
 
-				M.toast({html: '<?php echo $_SESSION['mensagem']; ?>'});
-			};
+		window.onload = function(){
 
-		</script>
-	<?php 	} ; 
-	
-	session_unset();
-			
+			M.toast({html: '<?php echo $_SESSION['mensagem']; ?>'});
+		};
 
- ?>
+	</script>
+<?php 	}; 
+
+session_unset();
+
+?>
