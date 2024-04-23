@@ -4,7 +4,8 @@ session_start();
 
 require_once 'conexao_bd.php';
 
-if (isset($_POST['btn-cadastrar'])) {
+if (isset($_POST['btn-cadastrar']))
+{
 
 	//sanitização
 
@@ -15,7 +16,7 @@ if (isset($_POST['btn-cadastrar'])) {
 	$sexo = mysqli_escape_string($connection,$_POST['sexo']);
 	$usuario = mysqli_escape_string($connection,$_POST['usuario']);
 	$senha = mysqli_escape_string($connection,$_POST['senha']);
-	/*
+	
 	$consulta = "SELECT * FROM pessoa where email = $email";
 
 	if (mysqli_query($connection,$consulta))
@@ -24,7 +25,7 @@ if (isset($_POST['btn-cadastrar'])) {
 
 		header('Location: ../login.php');
 	}
-	else{*/
+	else{
 
 		$sql = "INSERT INTO pessoa(nome,sobrenome,email,cpf,sexo,usuario,senha)VALUES('$nome','$sobrenome','$email','$cpf','$sexo','$usuario','$senha')";
 
@@ -40,4 +41,5 @@ if (isset($_POST['btn-cadastrar'])) {
 
 			header('Location: ../index.php');	
 		}
+	}
 }
