@@ -1,6 +1,6 @@
 <?php 
 
-	$server_name = 'localhost';
+	$server_name = '127.0.0.1';
 	$user_name = 'root';
 	$password = 'Rb25s87@#@';
 	$db_name = 'dbDados';

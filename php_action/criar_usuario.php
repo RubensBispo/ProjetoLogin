@@ -29,7 +29,8 @@ if (isset($_POST['btn-cadastrar']))
 
 		$sql = "INSERT INTO pessoa(nome,sobrenome,email,cpf,sexo,usuario,senha)VALUES('$nome','$sobrenome','$email','$cpf','$sexo','$usuario','$senha')";
 
-		if(mysqli_query($connection, $sql)) {
+		if(mysqli_query($connection, $sql))
+		{
 
 			$_SESSION['mensagem'] = "Usuário cadastrado com sucesso.";
 
