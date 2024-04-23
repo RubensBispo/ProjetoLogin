@@ -40,13 +40,13 @@
 			<div class="form-group row">
 				<p>
 					<label>
-						<input name="sexo" id="sexo" type="radio" checked />
+						<input name="sexo" id="sexo" value="m" type="radio" checked />
 						<span>Maculino</span>
 					</label>
 				</p>
 				<p>
 					<label>
-						<input name="sexo" id="sexo" type="radio" />
+						<input name="sexo" id="sexo" value="f" type="radio" />
 						<span>Feminino</span>
 					</label>
 				</p>
